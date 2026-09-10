@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://se-register-api.en.tripleten-services.com/v1';
+export const BASE_URL = 'https://api.joss.happyminecraft.org'; // Usa 'http://localhost:3000' si estás probando localmente
 
 const checkResponse = (res) => {
   if (res.ok) {
