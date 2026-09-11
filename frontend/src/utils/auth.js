@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.joss.happyminecraft.org'; // Usa 'http://localhost:3000' si estás probando localmente
+export const BASE_URL = 'https://api.joss.happyminecraft.org';
 
 const checkResponse = (res) => {
   if (res.ok) {

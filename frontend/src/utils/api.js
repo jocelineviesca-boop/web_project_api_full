@@ -70,7 +70,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://api.joss.happyminecraft.org', // Usa 'http://localhost:3000' si estás probando localmente
+  baseUrl: 'https://api.joss.happyminecraft.org',
 });
 
 export default api;
