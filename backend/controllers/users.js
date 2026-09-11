@@ -59,7 +59,7 @@ module.exports.getCurrentUser = (req, res, next) => {
       if (!user) {
         return res.status(404).send({ message: 'Usuario no encontrado' });
       }
-      return res.send({ data: user });
+      return res.send(user);
     })
     .catch(next);
 };
