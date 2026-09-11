@@ -63,3 +63,31 @@ module.exports.getCurrentUser = (req, res, next) => {
     })
     .catch(next);
 };
+
+module.exports.updateUser = (req, res, next) => {
+  const { name, about } = req.body;
+  User.findByIdAndUpdate(
+    req.user._id,
+    { name, about },
+    { new: true, runValidators: true }
+  )
+    .then((user) => {
+      if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
+      return res.send(user);
+    })
+    .catch(next);
+};
+
+module.exports.updateAvatar = (req, res, next) => {
+  const { avatar } = req.body;
+  User.findByIdAndUpdate(
+    req.user._id,
+    { avatar },
+    { new: true, runValidators: true }
+  )
+    .then((user) => {
+      if (!user) return res.status(404).send({ message: 'Usuario no encontrado' });
+      return res.send(user);
+    })
+    .catch(next);
+};    

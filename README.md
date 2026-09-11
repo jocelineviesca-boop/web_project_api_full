@@ -1,9 +1,9 @@
 # Tripleten web_project_api_full
 
 ## Descripción del proyecto
-**Around the U.S.** es una aplicación web interactiva full-stack donde los usuarios pueden compartir fotografías, explorar lugares de interés en EE. UU., darle "me gusta" a publicaciones de otros usuarios y gestionar su propio perfil. 
+**Around the U.S.** es una aplicación web interactiva full-stack donde se puede compartir fotografías, darle "me gusta" a publicaciones de otros usuarios y editar su propio perfil. 
 
-Esta versión integra tanto el front-end construido con React como un servidor back-end desarrollado con Node.js y Express, con persistencia de datos en MongoDB, autenticación de usuarios mediante tokens JWT, cifrado de contraseñas y validación estricta de solicitudes.
+Esta versión integra tanto el front-end hecho con React como un servidor back-end desarrollado con Node.js y Express, con persistencia de datos en MongoDB, autenticación de usuarios mediante tokens JWT, cifrado de contraseñas y validación estricta de solicitudes.
 
 ---
 
@@ -31,9 +31,10 @@ Esta versión integra tanto el front-end construido con React como un servidor b
 
 ---
 
-## Capturas de pantalla y demostración
-*(Puedes adjuntar capturas o GIFs de tu proyecto en funcionamiento en las siguientes secciones)*
+## Capturas de pantalla
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
 
 ![Vista Principal](https://via.placeholder.com/800x400?text=Vista+Principal+Around+The+US)
-
-* **Video demostrativo:** [Enlace a video en Loom / YouTube](https://youtube.com)
