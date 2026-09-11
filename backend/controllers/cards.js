@@ -11,8 +11,8 @@ module.exports.createCard = (req, res, next) => {
   const owner = req.user._id;
 
   Card.create({ name, link, owner })
-  .then((card) => res.status(201).send(card))
-  .catch(next);
+    .then((card) => res.status(201).send(card))
+    .catch(next);
 };
 
 module.exports.deleteCard = (req, res, next) => {
@@ -36,10 +36,8 @@ module.exports.likeCard = (req, res, next) => {
     { new: true }
   )
     .then((card) => {
-      if (!card) {
-        return res.status(404).send({ message: 'Tarjeta no encontrada' });
-      }
-      return res.send({ data: card });
+      if (!card) return res.status(404).send({ message: 'Tarjeta no encontrada' });
+      return res.send(card);
     })
     .catch(next);
 };
@@ -51,10 +49,8 @@ module.exports.dislikeCard = (req, res, next) => {
     { new: true }
   )
     .then((card) => {
-      if (!card) {
-        return res.status(404).send({ message: 'Tarjeta no encontrada' });
-      }
-      return res.send({ data: card });
+      if (!card) return res.status(404).send({ message: 'Tarjeta no encontrada' });
+      return res.send(card);
     })
     .catch(next);
 };
